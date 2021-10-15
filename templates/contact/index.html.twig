@@ -1,0 +1,51 @@
+
+
+{% extends 'base.html.twig' %}
+        {% block stylesheets %}
+          <link rel="stylesheet" href="../../public/css/global.css" />
+
+        {% endblock %}
+{% block title %}Votre liste de contact{% endblock %}
+
+{% block body %}
+
+
+
+  <img src="https://www.gstatic.com/images/branding/product/1x/contacts_48dp.png" alt="" aria-hidden="true" style="width:40px;height:40px" data-atf="true">
+  <h1>Contact</h1>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+              {#<td>Id</td>#}
+                <td>Nom</td>
+                <td>Prenom</td>
+              {# Commented Code in Twig  <td>Email</td>
+                <td>Telephone</td>
+                <td>actions</td> #}
+            </tr>
+        </thead>
+        <tbody>
+        {% for contact in contacts %}
+            <tr>
+              {#<td>{{ contact.id }}</td>#}
+                <td>{{ contact.nom }}</td>
+                <td>{{ contact.prenom }}</td>{#
+                <td>{{ contact.email }}</td>
+                <td>{{ contact.telephone }}</td>#}
+                <td>
+                    <a href="{{ path('contact_show', {'id': contact.id}) }}" class="button">Voir en detaille</a>
+                    <a href="{{ path('contact_edit', {'id': contact.id}) }}" class="button">modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">Aucun contact :)</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('contact_new') }}" class="button">Nouveaux contact</a>
+{% endblock %}

@@ -1,0 +1,73 @@
+
+body {
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em
+}
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+th[scope="col"] {
+  background-color: #696969;
+  color: #fff;
+}
+
+th[scope="row"] {
+  background-color: #d7d9f2;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: .8rem;
+  margin-left: 25%;
+}
+h1
+{
+  padding: 14px;
+  font-size: 32px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: black;
+  box-shadow:2px 2px 6px;
+  text-align:center;
+  display:inline-flex;
+  margin:16px;
+
+}
+.button {
+
+  text-decoration: none;
+  background-color: #EFEFEF;
+  color: #5A5A5A;
+
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+
+  font: inherit;
+}
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
