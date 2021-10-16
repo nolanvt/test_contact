@@ -2,7 +2,7 @@
 # test_contact
 
 
-Pour activer la maquette, il faut télécharger le fichier.
+Pour activer la maquette, il faut télécharger le repo.
 
 
 Premièrement allé dans le fichier .env est modifié l'accès a la basse de donner en remplaçant les codes d'accès db_usser et db_password
